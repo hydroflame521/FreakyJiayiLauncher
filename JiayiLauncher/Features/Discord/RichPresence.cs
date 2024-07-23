@@ -73,7 +73,7 @@ public static class RichPresence
 		
 		_startTime = DateTime.UtcNow;
 		
-		_client = new DiscordRpcClient("1138925544172441670");
+		_client = new DiscordRpcClient("1265118822206013561");
 		
 		_client.SkipIdenticalPresence = true;
 		_client.OnError += (_, e) => Log.Write("Discord", e.Message, Log.LogLevel.Error);
@@ -102,7 +102,7 @@ public static class RichPresence
 			return;
 		}
 		
-		_client ??= new DiscordRpcClient("1138925544172441670");
+		_client ??= new DiscordRpcClient("1265118822206013561");
 		
 		if (!_client.IsInitialized) _client.Initialize();
 
